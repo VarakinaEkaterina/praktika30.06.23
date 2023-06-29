@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Makeup</title>
+  </head>
+  <body>
+    <section>
+      <div id="header">Makeup</div>
+    </section>
+    <section>
+      <label for="marka">Введите бренд:</label>
+      <input
+        class="inp"
+        name="input"
+        list="brandList"
+        id="marka"
+        type="text"
+        placeholder="Covergirl"
+        autocomplete="on"
+      />
+      <datalist id="brandList"></datalist>
+
+      <br />
+      <label for="product">Введите тип продукта:</label>
+      <input
+        class="inp"
+        name="input"
+        list="productTypeOptions"
+        id="product"
+        type="text"
+        placeholder="Начните ввод на латинице"
+        autocomplete="on"
+      />
+      <datalist id="productTypeOptions"></datalist>
+
+      <button id="submit-button">Выполнить запрос</button>
+    </section>
+    <br />
+    <div>
+      <div id="brand-name"></div>
+      <img id="product-image" src="" alt="" />
+    </div>
+    <br />
+    <div id="productContainer"></div>
+  </body>
+</html>
